@@ -6,13 +6,19 @@ namespace AutomobileWebApp.Controllers
 {
     public class HomeController : Controller
     {
+
+        
         private readonly ILogger<HomeController> _logger;
 
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
         }
-
+        
+        /*public ActionResult RenderMenu()
+        {
+            return PartialView("_NavMenu");
+        }*/
         public IActionResult Index()
         {
             return View();
